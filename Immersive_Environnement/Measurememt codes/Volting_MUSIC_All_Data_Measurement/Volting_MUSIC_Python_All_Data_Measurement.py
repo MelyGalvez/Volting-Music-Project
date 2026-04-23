@@ -4,11 +4,11 @@ import time
 from datetime import datetime
 
 # Port série
-ser = serial.Serial('COM3', 115200, timeout=1)
+ser = serial.Serial('COM4', 115200, timeout=1)
 
 # Nom du fichier
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-path = rf"C:\Users\melyg\OneDrive\Bureau\Volting\Volting-MUSIC-Project\Initial_Prototype\V1\Results\donnees_volting_{timestamp}.csv"
+path = rf"C:\Users\Administrator\Desktop\Volting-MUSIC-Project\Immersive_Environnement\Measuremets results\donnees_volting_{timestamp}.csv"
 
 with open(path, 'w', newline='') as csvfile:
 
